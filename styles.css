@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    align-items: center;
+}
+
+.logo a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navlinks {
+    display: flex;
+    gap: 60px;
+}
+
+.navlinks li {
+    list-style: none;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.navlinks li a:hover {
+    font-size: 20px;
+    color: gray;
+    transition: 0.5s;
+}
+
+.navicon .none {
+    background: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.navicon a {
+    color: white;
+    background-color: orange;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.words {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    align-items: center;
+}
+
+.wordsnow {
+    display: block;
+    color: white;
+}
+
+.wordsnow h1 {
+    font-size: 75px;
+}
+
+.wordsclick {
+    display: flex;
+    gap: 20px;
+}
+
+.wordsclick a {
+    padding: 20px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.wordsclick .nogo {
+    background: none;
+    border: 1px solid orange;
+}
+
+.picture img {
+    height: 400px;
+    width: 400px;
+    border: 1px solid orange;
+    border-radius: 15px;
+}
+
+.picture img:hover {
+    border: 1px solid white;
+    box-shadow: 1px 1px 2px gray;
+    height: 402px;
+    width: 402px;
+    transition: 0.5s;
+}
+
+.percent {
+    background-color: white;
+}
+
+.outside {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.inside {
+    background-image: url(first.jpg);
+    width: 350px;
+    height: 410px;
+    padding: 20px;
+    color: white;
+}
+
+.inside h2 {
+    margin-top: 260px;
+}
+
+.inside a {
+    background-color: white;
+    color: orange;
+    padding: 13px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+
+.jbl .h2o {
+    border-bottom: 1px solid orange;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    margin: 0% auto;
+}
+
+.itel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.iphone {
+    display: block;
+    height: 320px;
+    width: 260px;
+    padding: 10px;
+    background-color: rgb(248, 244, 244);
+    margin: 10px;
+}
+
+.iphone img {
+    height: 200px;
+    width: 200px;
+}
+
+.menn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menn h2 {
+    color: orange;
+}
+
+.menn a {
+    background: none;
+    color: orange;
+    padding: 9px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.foot {
+    background-color: white;
+}
+
+.footlink {
+    display: flex;
+    gap: 90px;
+    padding: 10px;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.footlink li {
+    list-style: none;
+}
+
+.footlink li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footlink li a:hover {
+    color: gray;
+    transition: 0.5s;
+}
+
+.footicon {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.footicon svg {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.footinfo {
+    text-align: center;
+    justify-content: center;
+}
+
+.footinfo h2 {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.footinfo .headclo {
+    color: orange;
+}
+
+.footgo {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 20px;
+}
+
+.footgo a {
+    text-decoration: none;
+    color: black;
+}
+
+.copyr {
+    border-top: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    body {
+        width: 100%;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        background-color: black;
+        text-align: left;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .navicon {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .hamburger-menu {
+        display: block;
+        flex-direction: column;
+        color: white;
+        font-size: 30px;
+        margin-right: auto;
+        cursor: pointer;
+    }
+
+    .words {
+        flex-direction: column;
+    }
+
+    .picture img {
+        width: 420px;
+        height: 420px;
+        margin-top: 10px;
+    }
+
+    .outside {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .jbl {
+        align-items: center;
+    }
+    
+    .itel {
+        flex-direction: column-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footlink {
+        gap: 12px;
+    }
+
+    .footgo {
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+    }
+
+    .footgo {
+        gap: 9px;
+        align-items: center;
+    }
+
+    .navlinks.active {
+        display: flex; /* This makes the menu visible */
+    }
+
+}
